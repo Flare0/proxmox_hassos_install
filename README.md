@@ -50,7 +50,7 @@ To get the current IP address assigned to the VM from the command line
 ## Configure Network for Static IP Address
 
 To set a static IP address, use the following as an example
-- At the root prompt type `nmcli c mod $(nmcli -g uuid c) ipv4.method manual ipv4.addresses "192.168.20.170/24" ipv4.gateway "192.168.20.1" ipv4.dns "8.8.8.8,8.8.4.4"`
+- At the root prompt type `nmcli c mod $(nmcli -g uuid c) ipv4.method manual ipv4.addresses "10.15.20.21/24" ipv4.gateway "10.15.20.1" ipv4.dns "10.15.20.3"`
 - At the root prompt type `nmcli c up $(nmcli -g uuid c)`
 
 ## Configure Network for DHCP
